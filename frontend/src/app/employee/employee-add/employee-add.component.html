@@ -1,0 +1,25 @@
+<h2>Add New Employee</h2>
+
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Department</mat-label>
+    <input matInput formControlName="department" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Position</mat-label>
+    <input matInput formControlName="position" required />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Add Employee</button>
+</form>

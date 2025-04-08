@@ -1,0 +1,10 @@
+<h2>Employee Details</h2>
+
+<mat-card *ngIf="employee">
+  <mat-card-title>{{ employee.name }}</mat-card-title>
+  <mat-card-content>
+    <p><strong>Email:</strong> {{ employee.email }}</p>
+    <p><strong>Department:</strong> {{ employee.department }}</p>
+    <p><strong>Position:</strong> {{ employee.position }}</p>
+  </mat-card-content>
+</mat-card>
